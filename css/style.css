@@ -16,6 +16,9 @@ body{
     --transition: 0.3s;
 }
 /* --------------------------------------- */
+.mobile{
+    width: 80%;
+}
 input{
     box-shadow: var(--mainShadow);
     border: none;
