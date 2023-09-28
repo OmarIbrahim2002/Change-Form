@@ -16,8 +16,10 @@ body{
     --transition: 0.3s;
 }
 /* --------------------------------------- */
-.mobile{
-    width: 80%;
+@media (max-width: 768px) {
+    .mobile{
+        width: 80%;
+    }
 }
 input{
     box-shadow: var(--mainShadow);
