@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(185 186 193);
+}
+:root{
+    --mainBg: rgb(185 186 193);
+    --mainShadow: 5px 5px 9px 0px rgb(0 0 0 / 48%);
+    --transition: 0.3s;
+}
+/* --------------------------------------- */
+input{
+    box-shadow: var(--mainShadow);
+    border: none;
+    outline: none;
+    padding: 15px 13px;
+    width: 100%;
+    background: rgb(185 186 193);
+    border-radius: 5px;
+    transition: var(--transition);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.insetShadow{
+    box-shadow: inset 5px 5px 9px 0px rgb(0 0 0 / 48%), inset -9px -9px 9px 0px rgb(255, 255, 255, 48%);
+}
+i{
+    font-size: 14px;
+    cursor: pointer;
+    background: rgb(185 186 193);
+    padding: 12px;
+    box-shadow: var(--mainShadow);
+    border-radius: 5px;
+    transition: var(--transition);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+p{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(44 45 49);
+    text-align: center;
+}
+/* ------------------------- */
+.head button{
+    position: relative;
+    margin-top: 15px;
+    cursor: pointer;
+    background: white;
+    color: var(--mainColor);
+    font-weight: bold;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 15px;
+    transition: 0.3s;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.head button:focus{
+    outline: none;
+}
+.head button i{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 8px;
+    transform: translate(0, -50%) rotate(51deg);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transform: translate(0, -50%) rotate(51deg);
+    -moz-transform: translate(0, -50%) rotate(51deg);
+    -ms-transform: translate(0, -50%) rotate(51deg);
+    -o-transform: translate(0, -50%) rotate(51deg);
+}
+/* ---------------------------------- */
+.head p{
+    font-size: 28px;
+    margin: 0;
+}
+form{
+    width: 500px;
+    height: 455px;
+    text-align: center;
+}
+form button{
+    cursor: pointer;
+    background: rgb(185 186 193);
+    width: 100%;
+    font-weight: bold;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border: none;
+    box-shadow: var(--mainShadow);
+    border-radius: 5px;
+    transition: var(--transition);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+form button:focus{
+    outline: none;
+}
+form button:hover, i:not(.head button i):hover{
+    box-shadow: 0 0 9px 3px rgb(255, 255, 255, 48%);
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+input#search{
+    margin: 17px 0;
+    margin-right: 20px;
+}
+.unValidPass{
+    font-size: 10px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+/* -------------------------------- */
+.head button#change i.move{
+    transform: translate(55px, -50%) rotate(115deg);
+    -webkit-transform: translate(55px, -50%) rotate(115deg);
+    -moz-transform: translate(55px, -50%) rotate(115deg);
+    -ms-transform: translate(55px, -50%) rotate(115deg);
+    -o-transform: translate(55px, -50%) rotate(115deg);
+}
+.shadowNone{
+    box-shadow: none;
+    transform: translateX(90px);
+    -webkit-transform: translateX(90px);
+    -moz-transform: translateX(90px);
+    -ms-transform: translateX(90px);
+    -o-transform: translateX(90px);
+}
+.none{
+    display: none;
+}
